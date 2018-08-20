@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="patwa.aman.com.showweather.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:background="@android:color/holo_blue_dark"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/citytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datetext"
+            android:layout_centerHorizontal="true"
+            android:text="Mumbai"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:text="Date"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/datetext"
+            android:layout_below="@+id/citytext"
+            android:layout_marginStart="18dp"
+            android:text="12 deg"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desctext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dtext"
+            android:layout_alignBottom="@+id/dtext"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/temp3text"
+            android:text="min-max" />
+
+        <TextView
+            android:id="@+id/temp1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/temptext"
+            android:layout_marginTop="31dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/temp2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/temp3text"
+            android:layout_alignBottom="@+id/temp3text"
+            android:layout_toEndOf="@+id/temptext"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/temp3text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@+id/temp2text"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/temp4text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="TextView" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/temp1text"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_blue_bright">
+
+            <TextView
+                android:id="@+id/day2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="49dp"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/day3text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/day2text"
+                android:layout_below="@+id/day2text"
+                android:layout_marginTop="40dp"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/day4text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/day3text"
+                android:layout_below="@+id/day3text"
+                android:layout_marginTop="43dp"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/day5text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/day4text"
+                android:layout_below="@+id/day4text"
+                android:layout_marginTop="46dp"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/daytemp2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day3text"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="33dp"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/daytemp3text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/daytemp2text"
+                android:layout_alignTop="@+id/day3text"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/daytemp4text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/daytemp3text"
+                android:layout_alignTop="@+id/day4text"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/daytemp5text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/day5text"
+                android:layout_alignStart="@+id/daytemp4text"
+                android:text="TextView"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/temptext"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
